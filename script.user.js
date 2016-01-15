@@ -6,6 +6,7 @@
 // @author       /u/FreezyflameMC on reddit
 // @match        http://steamcommunity.com/market/listings/*
 // @grant        none
+// @updateURL    https://github.com/freezyflamemc/steamcurrencyconverter/raw/master/script.user.js
 // ==/UserScript==
 /* jshint -W097 */
 'use strict';
