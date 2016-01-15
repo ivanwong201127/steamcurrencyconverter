@@ -58,11 +58,9 @@ $.each(wordarray,function(index,val){
 }
 //looping the functions
 mainfunction();
-function repeat(){
+setInterval(function(){
 $('.market_paging_pagelink').click(
     function(){
-        setTimeout(function(){mainfunction()},1000);
-        setTimeout(function(){repeat()},1000);
+        setTimeout(function(){mainfunction()},1200);
 });
-}
-repeat();
+},1500);
