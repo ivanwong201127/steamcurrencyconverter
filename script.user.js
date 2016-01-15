@@ -60,7 +60,7 @@ while(counter<specprice.length){
 $.each(wordarray,function(index,val){
     var converted;
     converted = parseFloat(wordarray[index]);
-    //Change the currency below! vvv
+            //Change the currency below! vvv
     converted = (converted/exchangerates.EUR).toFixed(2);
     pricearray.push(converted);
     $('.market_listing_row:eq('+countertwo+')').find('.market_listing_price_with_fee').append("<br>US$ "+converted);
