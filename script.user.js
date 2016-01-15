@@ -10,7 +10,7 @@
 /* jshint -W097 */
 'use strict';
 
-//Change the currency in LINE 61 if you need to!!!
+//Change the currency in LINE 63 if you need to!!!
 //I'm annoyed by Steam forcing currency changes so I made a little script to convert currency on market to your own currency!
 //Steam profile: http://steamcommunity.com/id/freezyflame/ 
 //Add me if you can help me out!Or you have any questions
