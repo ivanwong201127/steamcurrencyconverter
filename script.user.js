@@ -75,4 +75,4 @@ $('.market_paging_pagelink').click(
     function(){
         setTimeout(function(){mainfunction()},700);
 });
-},1000);
+},2000);
