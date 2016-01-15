@@ -12,6 +12,18 @@
 
 // Your code here...
 var $ = window.jQuery;
+$.ajax({
+  url: "http://api.fixer.io/latest?callback=?",
+  type: "GET",
+  dataType: "json",
+  success: function(Jdata) {
+    alert("SUCCESS!!!");
+  },
+  
+  error: function() {
+    alert("ERROR!!!");
+  }
+});
 var exchangerates = {"AUD":1.4251,"BGN":1.7963,"BRL":4.0215,"CAD":1.4085,"CHF":0.9977,"CNY":6.5718,"CZK":24.817,"DKK":6.8519,"GBP":0.68612,"HKD":7.7582,"HRK":7.022,"HUF":291.44,"IDR":13847.0,"ILS":3.9334,"INR":66.809,"JPY":117.86,"KRW":1202.4,"MXN":17.834,"MYR":4.3768,"NOK":8.8878,"NZD":1.5225,"PHP":47.14,"PLN":4.0086,"RON":4.161,"RUB":75.31,"SEK":8.5158,"SGD":1.4334,"THB":36.27,"TRY":3.0191,"ZAR":16.575,"EUR":0.91844};
 var oriprice = $('.market_table_value').find('.market_listing_price_with_fee').text().split("HK$ ").join('');
 var specprice = oriprice.replace(/\s/g, '').replace(/,/g,'').trim();
@@ -54,7 +66,9 @@ $.each(wordarray,function(index,val){
 }
 //looping the functions
 mainfunction();
+setInterval(function(){
 $('.market_paging_pagelink').click(
     function(){
-        setTimeout(function(){mainfunction()},800);
+        setTimeout(function(){mainfunction()},1200);
 });
+},1500);
