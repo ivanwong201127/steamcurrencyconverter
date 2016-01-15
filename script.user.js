@@ -72,6 +72,6 @@ mainfunction();
 setInterval(function(){
 $('.market_paging_pagelink').click(
     function(){
-        setTimeout(function(){mainfunction()},1200);
+        setTimeout(function(){mainfunction()},700);
 });
-},1500);
+},1000);
