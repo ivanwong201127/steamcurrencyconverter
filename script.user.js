@@ -62,5 +62,5 @@ setInterval(function(){
 $('.market_paging_pagelink').click(
     function(){
         setTimeout(function(){mainfunction()},1000);
-});
+    });
 },1000);
